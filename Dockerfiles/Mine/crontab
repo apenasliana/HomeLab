@@ -1,0 +1,1 @@
+0 0,12 * * * bash /./home/mireuser/Scripts/backup.sh -v minecraftdata -c minecraft_minecraft_1 -o /home/mireuser/Scripts/Backups -r false -d 7

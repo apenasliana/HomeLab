@@ -10,6 +10,6 @@ services:
     volumes:
       - /home/mireuser/HeimDall:/config
     ports:
-      - 8080:80
-      - 443:443
+      - 8889:80
+      - 8443:443
     restart: unless-stopped

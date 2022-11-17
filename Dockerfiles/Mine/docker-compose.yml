@@ -3,6 +3,7 @@ version: "3"
 services:
   minecraft:
     image: itzg/minecraft-server
+    container_name: minecraftserver
     volumes:
       - minecraftdata:/data
       - /home/mireuser/MinecraftServer/plugins:/plugins
@@ -12,6 +13,11 @@ services:
       EULA: "TRUE"
       TYPE: "BUKKIT"
       OPS: "miresuwuka"
+      MIN_MEMORY: 1G
+      MAX_MEMORY: 8G
+      VIEW_DISTANCE: 10
+      SIMULATION_DISTANCE: 5
+      OVERRIDE_SERVER_PROPERTIES: "TRUE"
       ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "TRUE"
     tty: true
